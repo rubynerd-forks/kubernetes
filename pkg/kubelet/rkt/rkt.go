@@ -104,7 +104,7 @@ const (
 	// Also, do we want more granularity than path-at-the-kubelet-level and
 	// image/name-at-the-pod-level?
 	k8sRktStage1NameAnno = "rkt.alpha.kubernetes.io/stage1-name-override"
-	dockerPrefix         = "docker://"
+	dockerPrefix         = ""
 
 	authDir            = "auth.d"
 	dockerAuthTemplate = `{"rktKind":"dockerAuth","rktVersion":"v1","registries":[%q],"credentials":{"user":%q,"password":%q}}`
